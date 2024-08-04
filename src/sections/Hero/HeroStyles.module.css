@@ -6,11 +6,9 @@
   text-align: center;
   height: 100dvh;
   min-height: 500px;
-  padding: 0 1rem; /* Add padding for smaller screens */
 
   .hero {
     max-width: 200px;
-    width: 100%; /* Make the image responsive */
   }
 
   span {
@@ -72,14 +70,13 @@
 
 .description {
   max-width: 24ch;
-  margin: 0 auto; /* Center the text */
 }
 
 .info {
   display: flex;
   flex-direction: column;
   gap: 20px;
-  align-items: center; /* Center the content */
+  align-items: center; /* Center align content for better appearance */
 }
 
 /* Media Query for Tablet and Mobile Devices */
@@ -87,36 +84,15 @@
   .container {
     flex-direction: column;
     align-items: center; /* Center align items for small screens */
-
-    .hero {
-      max-width: 200px;
-      width: 80%; /* Adjust width for mobile screens */
-    }
-
-    .info {
-      gap: 15px; /* Reduce gap on smaller screens */
-    }
+    padding: 0 1rem; /* Add padding for better spacing on mobile */
   }
-}
 
-@media (min-width: 800px) and (max-width: 1400px) {
-  .container {
-    flex-direction: row-reverse;
-    align-items: center;
-    justify-content: space-evenly;
-
-    .hero {
-      max-width: 350px;
-      width: 350px;
-    }
+  .hero {
+    max-width: 200px;
+    width: 80%; /* Adjust width for mobile screens */
   }
-}
 
-@media (min-width: 1400px) {
-  .container {
-    .hero {
-      max-width: 400px;
-      width: 400px;
-    }
+  .info {
+    gap: 15px; /* Reduce gap between elements on smaller screens */
   }
 }
